@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_medium" >
+
+    <jp.co.se.androidnfc.dakoku.DigitalClock2
+        android:id="@+id/digitalClock1"
+        android:layout_width="742dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.49"
+        android:text="DigitalClock2"
+        android:textSize="35sp" />
+
+    <jp.co.se.androidnfc.dakoku.DigitalClock
+        android:id="@+id/digitalClock2"
+        android:layout_width="476dp"
+        android:layout_height="wrap_content"
+        android:text="DigitalClock"
+        android:textSize="160sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="@dimen/padding_small"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/holo_blue_light" />
+
+    <RadioGroup
+        android:id="@+id/rgroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radio0"
+            android:layout_width="262dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="出勤"
+            android:textSize="50sp" />
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="退勤"
+            android:textSize="50sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/Read"
+        android:layout_width="908dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textSize="30sp" />
+
+</LinearLayout>
